@@ -40,6 +40,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:TableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
         
+        cell.selectionStyle = .none
         cell.img.image = arrayimg[indexPath.row]
         cell.Lbl.text = arraydata[indexPath.row]
         
